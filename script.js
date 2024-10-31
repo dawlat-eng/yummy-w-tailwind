@@ -94,6 +94,7 @@ async function displayMealDetails(meal) {
 
     $('.hiddenDiv').addClass('hidden');
     $('.insidingridien').addClass('hidden');
+    $('.insidarea').addClass('hidden');
     let box = `
         <div class="w-full md:w-1/3 hiddenDiv">
             <img class="w-full rounded-lg" src="${meal.strMealThumb}" alt="meal-photo"/>
@@ -251,7 +252,7 @@ async function getArea(){
         </div>
         `
     }
-    document.getElementById("rowData").innerHTML+=box;
+    document.getElementById("disArea").innerHTML+=box;
   }
   
 // get one Area meals from Api
@@ -270,7 +271,7 @@ async function getArea(){
     let box=``;
     for(i=0 ; i< data.length ; i++){
         box += `
-        <div class="w-full">
+        <div class="w-full insidarea">
                 <div onclick="getMealDetails('${data[i].idMeal}')" class="meal overflow-hidden relative rounded-2 cursor-pointer">
                     <img class="w-full" src="${data[i].strMealThumb}" alt="img" srcset="">
                     <div class="meal-layer inset-0 absolute flex items-center justify-center bg-white bg-opacity-70 p-2 opacity-0 transition-opacity duration-300 hover:opacity-100">
