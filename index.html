@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imges/imges1.png">
+    <title>Yummy exam</title>
+    <link rel="stylesheet" href="./webfonts/css/all.min.css">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-black cursor-pointer">      
+<!-- Loading Screen -->
+ <div class="loading-screen bg-white fixed inset-0 flex justify-center items-center">
+    <i class="fa fa-spinner fa-spin text-5xl"></i>
+</div> 
+
+<!-- Sidebar -->
+<div class="side-nav-menu min-h-screen fixed flex flex-col top-0 z-50">
+    <div class="nav-tab flex flex-col justify-between min-h-screen p-4 absolute left-[-268px] text-white bg-black">
+        <div class="links" id="links">
+            <ul class="list-none list-unstyled overflow-hidden">
+                <li class="p-2 relative" style="top: 300px" onclick="disSearchPage()">Search</li>
+                <li class="p-2 relative" style="top: 300px" onclick="getCategoryMeals()">Categories</li>
+                <li class="p-2 relative" style="top: 300px" onclick="getArea()">Area</li>
+                <li class="p-2 relative" style="top: 300px" onclick="getIngradiants()">Ingredients</li>
+                <li class="p-2 relative" style="top: 300px" onclick="contactUsPage()">Contact Us</li>
+            </ul>
+        </div>
+        <div class="nav-footer">
+            <div class="icons flex space-x-4">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer text-center">
+                <p class="text-sm">Copyright © 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav-header relative flex flex-col justify-between py-4 text-center px-2 bg-white text-black h-screen">
+        <img class="logo mx-auto" src="./imges/imges1.png" alt="logo-img" width="50" />
+        <div class="open-close-btn"> 
+            <i class="fa-solid open-close-icon fa-align-justify text-2xl"></i>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-globe p-2"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+</div>
+
+<!-- display-start -->
+<div class="container mx-auto w-3/4" id="searchContainer">
+
+</div>
+
+<div class="container mx-auto">
+    <div class="grid lg:grid-cols-4 py-5 gap-4" id="rowData">
+
+    </div>
+    <div class="container mx-auto">
+        <div class="grid lg:grid-cols-4  gap-4" id="displayOneMeal">
+    
+        </div>
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-4  gap-4" id="disArea">
+        
+            </div>
+    
+</div>
+<div class="container mx-auto">
+    <div class="flex flex-wrap flex-col  gap-4" id="oneDetails">
+
+    </div>
+    
+</div>
+
+<div class="container mx-auto">
+    <div class="flex flex-wrap flex-row py-2 gap-4" id="mealdeat">
+
+    </div>
+    
+</div>
+<!-- display-ends -->
+
+<!-- js-files -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+    
